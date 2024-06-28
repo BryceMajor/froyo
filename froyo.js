@@ -6,7 +6,7 @@ const userEnteredOrder = prompt(
 // splits the enetered string at the comma
 const flavor = userEnteredOrder.split(",");
 
-// defines our base
+// defines our object
 const froyoOrder = {};
 
 // this will proccess the entered order into the table
