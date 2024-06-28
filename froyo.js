@@ -7,9 +7,9 @@ const userEnteredOrder = prompt(
 const flavor = userEnteredOrder.split(",");
 
 // defines our base
-const froyoOrder = {}
+const froyoOrder = {};
 
-// the function that will proccess the entered order into the table
+// this will proccess the entered order into the table
 for(let i = 0; i < flavor.length; i++){
     let enteredFlavor = flavor[i]
     if (enteredFlavor in froyoOrder){
@@ -17,6 +17,6 @@ for(let i = 0; i < flavor.length; i++){
     } else {
         froyoOrder[enteredFlavor] = 1
     }
-}
+};
 
-console.table(froyoOrder)
+console.table(froyoOrder);
